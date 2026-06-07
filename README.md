@@ -33,7 +33,7 @@ SQLite 不需要单独安装数据库服务，数据会保存在网页端的 `da
 示例目录：
 
 ```text
-E:\isekai-web-roulette\
+C:\isekai-web-roulette\
 ```
 
 Caddy 需要指向网页端的 `public` 目录。
@@ -42,8 +42,8 @@ Caddy 需要指向网页端的 `public` 目录。
 
 ```caddyfile
 isekai.example.cn {
-    root * E:\isekai-web-roulette\public
-    php_fastcgi 127.0.0.1:8767
+    root * C:\isekai-web-roulette\public
+    php_fastcgi 127.0.0.1:114514
     file_server
 }
 ```
@@ -52,7 +52,7 @@ Windows 下启动 PHP-CGI 建议使用：
 
 ```bat
 set PHP_FCGI_MAX_REQUESTS=0
-php-cgi.exe -b 127.0.0.1:8767
+php-cgi.exe -b 127.0.0.1:114514
 ```
 
 如果不设置 `PHP_FCGI_MAX_REQUESTS`，PHP-CGI 可能在处理一定数量请求后自动退出。
