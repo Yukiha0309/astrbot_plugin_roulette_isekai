@@ -41,7 +41,7 @@ Caddy 需要指向网页端的 `public` 目录。
 示例 Caddyfile：
 
 ```caddyfile
-isekai.nyacraft.cn {
+isekai.example.cn {
     root * E:\isekai-web-roulette\public
     php_fastcgi 127.0.0.1:8767
     file_server
