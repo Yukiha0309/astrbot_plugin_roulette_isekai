@@ -1,0 +1,6 @@
+name: astrbot_plugin_roulette_isekai
+desc: "群聊异界战争轮盘插件，包含异界道具、特殊道具、酒狐事件和可配置人数规则。"
+display_name: 异界战争轮盘
+version: v0.1.0
+author: 赤井梓
+repo: "https://github.com/Yukiha0309/astrbot-plugin-roulette-isekai"

@@ -1,0 +1,293 @@
+{
+  "super_admins": {
+    "type": "list",
+    "description": "超级管理员 QQ 号",
+    "hint": "这里填写的用户可以结束游戏或处决挂机玩家。房主不需要填写，也拥有创建房间的管理权。",
+    "default": []
+  },
+  "whitelist_groups": {
+    "type": "list",
+    "description": "群聊白名单",
+    "hint": "若填写，则插件仅在这些群生效。",
+    "default": []
+  },
+  "blacklist_groups": {
+    "type": "list",
+    "description": "群聊黑名单",
+    "hint": "这些群将禁用本插件。",
+    "default": []
+  },
+  "max_players": {
+    "type": "int",
+    "description": "最大玩家数",
+    "hint": "默认 6。可以调高到 7 人或以上，但超过 6 人后平衡性与回合节奏可能下降。",
+    "default": 6,
+    "slider": {
+      "min": 2,
+      "max": 17,
+      "step": 1
+    }
+  },
+  "use_player_codes": {
+    "type": "bool",
+    "description": "使用玩家代号",
+    "hint": "开启后对局内玩家显示为 P1、P2 等，开局会公布代号对应关系。",
+    "default": true
+  },
+  "player_name_max_length": {
+    "type": "int",
+    "description": "玩家名最大显示长度",
+    "hint": "关闭玩家代号或展示代号映射时使用，过长会自动截断。",
+    "default": 8,
+    "slider": {
+      "min": 4,
+      "max": 20,
+      "step": 1
+    }
+  },
+  "isekai_2_hp": {
+    "type": "int",
+    "description": "异界战争 2 人局：初始血量",
+    "default": 5,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_2_item_start_round": {
+    "type": "int",
+    "description": "异界战争 2 人局：第几轮开始发道具",
+    "default": 3,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_2_item_count": {
+    "type": "string",
+    "description": "异界战争 2 人局：每次发放道具数量",
+    "hint": "可填固定值 3，也可填范围 1-3。",
+    "default": "2-4"
+  },
+  "isekai_2_max_items": {
+    "type": "int",
+    "description": "异界战争 2 人局：背包上限",
+    "default": 8,
+    "slider": {
+      "min": 0,
+      "max": 12,
+      "step": 1
+    }
+  },
+  "isekai_2_early_rounds": {
+    "type": "int",
+    "description": "异界战争 2 人局：前几轮限制子弹数",
+    "hint": "填 0 表示不限制。",
+    "default": 3,
+    "slider": {
+      "min": 0,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_2_early_max_bullets": {
+    "type": "int",
+    "description": "异界战争 2 人局：前期最多几发",
+    "default": 4,
+    "slider": {
+      "min": 3,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_3_4_hp": {
+    "type": "int",
+    "description": "异界战争 3-4 人局：初始血量",
+    "default": 4,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_3_4_item_start_round": {
+    "type": "int",
+    "description": "异界战争 3-4 人局：第几轮开始发道具",
+    "default": 2,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_3_4_item_count": {
+    "type": "string",
+    "description": "异界战争 3-4 人局：每次发放道具数量",
+    "hint": "可填固定值 3，也可填范围 1-3。",
+    "default": "2-3"
+  },
+  "isekai_3_4_max_items": {
+    "type": "int",
+    "description": "异界战争 3-4 人局：背包上限",
+    "default": 6,
+    "slider": {
+      "min": 0,
+      "max": 12,
+      "step": 1
+    }
+  },
+  "isekai_3_4_early_rounds": {
+    "type": "int",
+    "description": "异界战争 3-4 人局：前几轮限制子弹数",
+    "hint": "填 0 表示不限制。",
+    "default": 2,
+    "slider": {
+      "min": 0,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_3_4_early_max_bullets": {
+    "type": "int",
+    "description": "异界战争 3-4 人局：前期最多几发",
+    "default": 5,
+    "slider": {
+      "min": 3,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_5_6_hp": {
+    "type": "int",
+    "description": "异界战争 5-6 人局：初始血量",
+    "default": 3,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_5_6_item_start_round": {
+    "type": "int",
+    "description": "异界战争 5-6 人局：第几轮开始发道具",
+    "default": 1,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_5_6_item_count": {
+    "type": "string",
+    "description": "异界战争 5-6 人局：每次发放道具数量",
+    "hint": "可填固定值 3，也可填范围 1-3。",
+    "default": "1-2"
+  },
+  "isekai_5_6_max_items": {
+    "type": "int",
+    "description": "异界战争 5-6 人局：背包上限",
+    "default": 4,
+    "slider": {
+      "min": 0,
+      "max": 12,
+      "step": 1
+    }
+  },
+  "isekai_5_6_early_rounds": {
+    "type": "int",
+    "description": "异界战争 5-6 人局：前几轮限制子弹数",
+    "hint": "填 0 表示不限制。",
+    "default": 2,
+    "slider": {
+      "min": 0,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_5_6_early_max_bullets": {
+    "type": "int",
+    "description": "异界战争 5-6 人局：前期最多几发",
+    "default": 7,
+    "slider": {
+      "min": 3,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_7_plus_hp": {
+    "type": "int",
+    "description": "异界战争 7 人及以上：初始血量",
+    "default": 2,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_7_plus_item_start_round": {
+    "type": "int",
+    "description": "异界战争 7 人及以上：第几轮开始发道具",
+    "default": 1,
+    "slider": {
+      "min": 1,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_7_plus_item_count": {
+    "type": "string",
+    "description": "异界战争 7 人及以上：每次发放道具数量",
+    "hint": "可填固定值 3，也可填范围 1-3。",
+    "default": "1"
+  },
+  "isekai_7_plus_max_items": {
+    "type": "int",
+    "description": "异界战争 7 人及以上：背包上限",
+    "default": 3,
+    "slider": {
+      "min": 0,
+      "max": 12,
+      "step": 1
+    }
+  },
+  "isekai_7_plus_early_rounds": {
+    "type": "int",
+    "description": "异界战争 7 人及以上：前几轮限制子弹数",
+    "hint": "填 0 表示不限制。",
+    "default": 0,
+    "slider": {
+      "min": 0,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "isekai_7_plus_early_max_bullets": {
+    "type": "int",
+    "description": "异界战争 7 人及以上：前期最多几发",
+    "default": 10,
+    "slider": {
+      "min": 3,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "jiuhu_event_enabled": {
+    "type": "bool",
+    "description": "酒狐事件开关",
+    "hint": "仅异界战争插件生效。",
+    "default": true
+  },
+  "jiuhu_event_chance": {
+    "type": "int",
+    "description": "酒狐事件概率",
+    "hint": "每个弹仓轮开始时触发酒狐事件的概率，推荐 30。",
+    "default": 30,
+    "slider": {
+      "min": 0,
+      "max": 100,
+      "step": 5
+    }
+  }
+}
